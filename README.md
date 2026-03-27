@@ -2,12 +2,9 @@
 
 ## Introduction
 **MUNSIKSA**는 안정적인 이커머스 비즈니스를 위한 Spring Boot 기반의 백엔드 서비스입니다.
-단순한 쇼핑몰 기능을 넘어, 결제 무결성 검증, 관리자 보안 강화, 그리고 LLM 기반의 운영 자동화 시스템(MCP)을 도입하여 기술적 차별성을 확보했습니다.
+단순한 쇼핑몰 기능을 넘어, 결제 무결성 검증 / 관리자 보안 강화 / LLM 기반의 운영 자동화 시스템(MCP)을 도입하여 기술적 차별성을 확보했습니다.
 
 ## Key Problem Solving
-
-<details>
-<summary>접기/펼치기</summary>
 
 ### **쇼핑몰 운영 효율화를 위한 Spring Boot 기반 MCP AI 에이전트 서버 구축**
 
@@ -69,8 +66,6 @@
 - **시스템 신뢰성 확보:** 서버 점검이나 장애 상황에서도 사용자에게 명확한 피드백을 제공하고, 보안 사고를 예방하여 시스템 안전성을 확보했습니다.
 - **관리자 기능 완성:** 회원 목록 조회, 삭제, 권한 변경 등 관리자 핵심 기능을 완성하여 쇼핑몰 운영을 위한 기반 시스템을 성공적으로 런칭했습니다.
 
-</details>
-
 ## Tech Stacks
 
 ### Application
@@ -86,22 +81,20 @@
 ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
 ![Axios](https://img.shields.io/badge/Axios-5A29E4?logo=axios&logoColor=white)
 
+## Architecture
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/df7302e9-d98f-43cc-a67c-4ea8d72d6f75" />
+
 ## Environment Vairables `.env`
 ```
 DB_USERNAME=
 DB_PASSWORD=
-
 EMAIL_USERNAME=
 EMAIL_APP_PASSWORD=
-
 JWT_SECRET=
-
 ITEM_IMG_PATH=
 UPLOAD_PATH=
-
 ADMIN_DEFAULT_EMAIL=
 ADMIN_DEFAULT_PASSWORD=
-
 PORTONE_API_KEY=
 ```
 
@@ -109,7 +102,7 @@ PORTONE_API_KEY=
 - **Member**: 회원가입(이메일 인증), 로그인/로그아웃, 마이페이지, 권한 관리
 - **Item**: 상품 CRUD, 카테고리 관리, 다중 이미지 업로드, 재고 관리
 - **Order & Pay**: 장바구니, 결제(PortOne), 주문 내역 조회, 주문 취소
-- **Coupon**: 쿠폰 생성, 사용자 발급, 관리자 일괄 지급(Bulk Issue)
+- **Coupon**: 쿠폰 생성, 사용자 발급, 관리자 일괄 지급
 - **AI Operations**: Gemini 기반 자연어 운영 관리 (MCP Server 연동)
 
 ## API Documentation
